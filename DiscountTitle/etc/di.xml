@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Checkout\Model\Cart">
-        <plugin name="interceptUpdateProductToCart" type="Dv\DiscountTitle\Plugin\ProductNameBeforeUpdateCart"/>
+        <plugin name="interceptUpdateProductToCart" type="Namespace\DiscountTitle\Plugin\ProductNameBeforeUpdateCart"/>
     </type>
     <type name="Magento\Checkout\Block\Cart\Item\Renderer">
-        <plugin name="Dv_DiscountTitle::Cart_Name_Changer" type="Dv\DiscountTitle\Plugin\Cart\Name" sortOrder="1"/>
+        <plugin name="Namespace_DiscountTitle::Cart_Name_Changer" type="Namespace\DiscountTitle\Plugin\Cart\Name" sortOrder="1"/>
     </type>
     <type name="Magento\Checkout\CustomerData\AbstractItem">
-        <plugin name="Dv_DiscountTitle::Minicart_Name_Changer" type="Dv\DiscountTitle\Plugin\Minicart\Name" sortOrder="1"/>
+        <plugin name="Namespace_DiscountTitle::Minicart_Name_Changer" type="Namespace\DiscountTitle\Plugin\Minicart\Name" sortOrder="1"/>
     </type>
     <type name="Magento\Checkout\Model\DefaultConfigProvider">
-        <plugin name="AddAttPlug" type="Dv\DiscountTitle\Plugin\CheckoutSidebar\ConfigProviderPlugin" />
+        <plugin name="AddAttPlug" type="Namespace\DiscountTitle\Plugin\CheckoutSidebar\ConfigProviderPlugin" />
     </type>
     <type name="Magento\Checkout\Model\ShippingInformationManagement">
-        <plugin name="sr_save_delivery_date_in_quote2" type="Dv\DiscountTitle\Plugin\ShippingInformationManagementPlugin" sortOrder="1"/>
+        <plugin name="sr_save_delivery_date_in_quote2" type="Namespace\DiscountTitle\Plugin\ShippingInformationManagementPlugin" sortOrder="1"/>
     </type>
     <type name="Magento\Checkout\Block\Cart\Item\Renderer">
-        <plugin name="cart_item_renderer_plugin" type="Dv\DiscountTitle\Plugin\CartItemRenderer" sortOrder="1"/>
+        <plugin name="cart_item_renderer_plugin" type="Namespace\DiscountTitle\Plugin\CartItemRenderer" sortOrder="1"/>
     </type>
     <type name="Magento\Quote\Model\Cart\Totals">
-        <plugin name="change_product_name_after_onepagecheckout_reload" type="Dv\DiscountTitle\Plugin\Cart\Totals" sortOrder="1"/>
+        <plugin name="change_product_name_after_onepagecheckout_reload" type="Namespace\DiscountTitle\Plugin\Cart\Totals" sortOrder="1"/>
     </type>
-    <!--<preference for="Magento\Checkout\Block\Cart\Item\Renderer" type="Dv\DiscountTitle\Block\Cart\Item\Renderer" />-->
+    <!--<preference for="Magento\Checkout\Block\Cart\Item\Renderer" type="Namespace\DiscountTitle\Block\Cart\Item\Renderer" />-->
 </config>
