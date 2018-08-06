@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="checkout_cart_product_add_after">
-        <observer name="Dv_DiscountTitle_Addtocart" instance="Dv\DiscountTitle\Observer\ProductNameAfterAddtoCart" />
+        <observer name="Namespace_DiscountTitle_Addtocart" instance="Namespace\DiscountTitle\Observer\ProductNameAfterAddtoCart" />
     </event>
     <event name="checkout_submit_before">
-        <observer name="Dv_DiscountTitle_BeforeOrderSave" instance="Dv\DiscountTitle\Observer\BeforeOrderSave" />
+        <observer name="Namespace_DiscountTitle_BeforeOrderSave" instance="Namespace\DiscountTitle\Observer\BeforeOrderSave" />
     </event>
     <event name="checkout_submit_all_after">
-        <observer name="Dv_DiscountTitle_AfterShippingSave" instance="Dv\DiscountTitle\Observer\BeforeOrderSave" />
+        <observer name="Namespace_DiscountTitle_AfterShippingSave" instance="Namespace\DiscountTitle\Observer\BeforeOrderSave" />
     </event>
 </config>
