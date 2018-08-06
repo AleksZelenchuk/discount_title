@@ -1,5 +1,5 @@
 <?php
-namespace Dv\DiscountTitle\Plugin\Cart;
+namespace Namespace\DiscountTitle\Plugin\Cart;
 
 use \Magento\Quote\Model\Quote\Item\AbstractItem;
 
