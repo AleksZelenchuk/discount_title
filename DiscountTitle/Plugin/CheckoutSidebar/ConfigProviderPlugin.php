@@ -1,6 +1,6 @@
 <?php
 
-namespace Dv\DiscountTitle\Plugin\CheckoutSidebar;
+namespace Namespace\DiscountTitle\Plugin\CheckoutSidebar;
 
 class ConfigProviderPlugin extends \Magento\Framework\Model\AbstractModel
 {
