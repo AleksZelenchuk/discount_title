@@ -1,5 +1,5 @@
 <?php
-namespace Dv\DiscountTitle\Plugin;
+namespace Namespace\DiscountTitle\Plugin;
 
 class ShippingInformationManagementPlugin
 {
@@ -9,7 +9,7 @@ class ShippingInformationManagementPlugin
     protected $quoteRepository;
     protected $dvHelper;
 
-    public function __construct(\Dv\DiscountTitle\Helper\Data $dvHelper,
+    public function __construct(\Namespace\DiscountTitle\Helper\Data $dvHelper,
                                 \Magento\Quote\Model\QuoteRepository $quoteRepository)
     {
         $this->dvHelper = $dvHelper;
