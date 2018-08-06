@@ -1,15 +1,15 @@
 <?php
 
-namespace Dv\DiscountTitle\Plugin\Cart;
+namespace Namespace\DiscountTitle\Plugin\Cart;
 
-use \Dv\DiscountTitle\Helper\Data as DvHelper;
+use \Namespace\DiscountTitle\Helper\Data as Helper;
 
 class Name
 {
 
     protected $dvhelper;
 
-    public function __construct(DvHelper $dvhelper)
+    public function __construct(Helper $dvhelper)
     {
         $this->dvhelper = $dvhelper;
     }
