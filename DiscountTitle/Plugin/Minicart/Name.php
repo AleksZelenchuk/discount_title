@@ -1,8 +1,8 @@
 <?php
 
-namespace Dv\DiscountTitle\Plugin\Minicart;
+namespace Namespace\DiscountTitle\Plugin\Minicart;
 
-use \Dv\DiscountTitle\Helper\Data as DvHelper;
+use \Namespace\DiscountTitle\Helper\Data as Helper;
 
 
 class Name
@@ -11,7 +11,7 @@ class Name
     protected $logger;
     protected $jsonHelper;
 
-    public function __construct(DvHelper $dvhelper,
+    public function __construct(Helper $dvhelper,
                                 \Psr\Log\LoggerInterface $logger,
                                 \Magento\Framework\Serialize\Serializer\Json $jsonHelper)
     {
