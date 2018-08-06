@@ -1,10 +1,10 @@
 <?php
-namespace Dv\DiscountTitle\Plugin;
+namespace Namespace\DiscountTitle\Plugin;
 
 use Magento\Framework\Event\ObserverInterface;
 use Magento\Framework\App\RequestInterface;
 use \Magento\Framework\Message\ManagerInterface ;
-use \Dv\DiscountTitle\Helper\Data as DvHelper;
+use \Namespace\DiscountTitle\Helper\Data as Helper;
 
 class ProductNameBeforeUpdateCart
 {
@@ -20,7 +20,7 @@ class ProductNameBeforeUpdateCart
     protected $quote;
 
     /**
-     * @var \Dv\DiscountTitle\Helper\Data
+     * @var \Namespace\DiscountTitle\Helper\Data
      */
     protected $dvHelper;
     /**
@@ -32,12 +32,12 @@ class ProductNameBeforeUpdateCart
      * ProductNameAfterAddtoCart constructor.
      * @param \Magento\Checkout\Model\Session $checkoutSession
      * @param ManagerInterface $messageManager
-     * @param DvHelper $dvHelper
+     * @param Helper $dvHelper
      */
     public function __construct(
         \Magento\Checkout\Model\Session $checkoutSession,
         ManagerInterface $messageManager,
-        DvHelper $dvHelper
+        Helper $dvHelper
     ) {
         $this->quote = $checkoutSession->getQuote();
         $this->_messageManager = $messageManager;
